@@ -144,11 +144,16 @@ main {
 .top-element-box {
   height: 129px;
   box-shadow: 0 0 5px black;
+  overflow: hidden;
+}
+.img-overflow{
+  height: 129px;
 }
 
 .bottom-element-box-border {
-  border: 1px solid #686c70;
-  border-top-style: none;
+  border: 1px solid #ffffff;
+  border-radius: 0 0 10px 10px;
+  /* border-top-style: none; */
 }
 
 .bottom-element-box {
@@ -156,6 +161,7 @@ main {
   flex-direction: column;
   background-color: #ffffff;
   box-shadow: 0 0 5px black;
+  border-radius: 0 0 11px 11px;
 }
 
 .bottom-element-box p {
@@ -163,7 +169,14 @@ main {
   padding: 5px;
   color: #454f5b;
 }
-
+.frstSpan{
+  display: flex;
+}
+.price-bold{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
 .bottom-element-box .price-bold p {
   font-size: 15px;
   font-weight: bold;
@@ -177,9 +190,6 @@ main {
   font-size: 13px;
 }
 
-.bottom-element-box span {
-  display: flex;
-}
 
 /*                                                  function price                                       */
 .wrapper {
