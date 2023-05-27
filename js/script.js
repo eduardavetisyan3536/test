@@ -34,7 +34,8 @@ function fillColor() {
 
 //                                                          PRODUCTS
 let dataCount = document.querySelector(".dataCount");
-let products = [{
+let products = [
+  {
     id: 1,
     title: "iPhone 9",
     description: "An apple mobile which is nothing like apple",
@@ -56,7 +57,8 @@ let products = [{
   {
     id: 2,
     title: "iPhone X",
-    description: "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+    description:
+      "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
     price: 899,
     discountPercentage: 17.94,
     rating: 4.44,
@@ -74,7 +76,8 @@ let products = [{
   {
     id: 3,
     title: "Samsung Universe 9",
-    description: "Samsung's new variant which goes beyond Galaxy to the Universe",
+    description:
+      "Samsung's new variant which goes beyond Galaxy to the Universe",
     price: 1249,
     discountPercentage: 15.46,
     rating: 4.09,
@@ -106,7 +109,8 @@ let products = [{
   {
     id: 5,
     title: "Huawei P30",
-    description: "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+    description:
+      "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
     price: 499,
     discountPercentage: 10.58,
     rating: 4.09,
@@ -123,7 +127,8 @@ let products = [{
   {
     id: 6,
     title: "MacBook Pro",
-    description: "MacBook Pro 2021 with mini-LED display may launch between September, November",
+    description:
+      "MacBook Pro 2021 with mini-LED display may launch between September, November",
     price: 1749,
     discountPercentage: 11.02,
     rating: 4.57,
@@ -141,7 +146,8 @@ let products = [{
   {
     id: 7,
     title: "Samsung Galaxy Book",
-    description: "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+    description:
+      "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
     price: 1499,
     discountPercentage: 4.15,
     rating: 4.25,
@@ -159,7 +165,8 @@ let products = [{
   {
     id: 8,
     title: "Microsoft Surface Laptop 4",
-    description: "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+    description:
+      "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
     price: 1499,
     discountPercentage: 10.23,
     rating: 4.43,
@@ -178,7 +185,8 @@ let products = [{
   {
     id: 9,
     title: "Infinix INBOOK",
-    description: "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+    description:
+      "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
     price: 1099,
     discountPercentage: 11.83,
     rating: 4.54,
@@ -197,7 +205,8 @@ let products = [{
   {
     id: 10,
     title: "HP Pavilion 15-DK1056WM",
-    description: "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+    description:
+      "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
     price: 1099,
     discountPercentage: 6.18,
     rating: 4.43,
@@ -215,7 +224,8 @@ let products = [{
   {
     id: 11,
     title: "perfume Oil",
-    description: "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+    description:
+      "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
     price: 13,
     discountPercentage: 8.4,
     rating: 4.26,
@@ -252,7 +262,8 @@ let products = [{
   {
     id: 13,
     title: "Fog Scent Xpressio Perfume",
-    description: "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
+    description:
+      "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
     price: 13,
     discountPercentage: 8.14,
     rating: 4.59,
@@ -271,7 +282,8 @@ let products = [{
   {
     id: 14,
     title: "Non-Alcoholic Concentrated Perfume Oil",
-    description: "Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
+    description:
+      "Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
     price: 120,
     discountPercentage: 15.6,
     rating: 4.21,
@@ -289,7 +301,8 @@ let products = [{
   {
     id: 15,
     title: "Eau De Perfume Spray",
-    description: "Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality",
+    description:
+      "Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality",
     price: 30,
     discountPercentage: 10.99,
     rating: 4.7,
@@ -308,7 +321,8 @@ let products = [{
   {
     id: 16,
     title: "Hyaluronic Acid Serum",
-    description: "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
+    description:
+      "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
     price: 19,
     discountPercentage: 13.31,
     rating: 4.83,
@@ -327,7 +341,8 @@ let products = [{
   {
     id: 17,
     title: "Tree Oil 30ml",
-    description: "Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,",
+    description:
+      "Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,",
     price: 12,
     discountPercentage: 4.09,
     rating: 4.52,
@@ -345,7 +360,8 @@ let products = [{
   {
     id: 18,
     title: "Oil Free Moisturizer 100ml",
-    description: "Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.",
+    description:
+      "Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.",
     price: 40,
     discountPercentage: 13.1,
     rating: 4.56,
@@ -364,7 +380,8 @@ let products = [{
   {
     id: 19,
     title: "Skin Beauty Serum.",
-    description: "Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m",
+    description:
+      "Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m",
     price: 46,
     discountPercentage: 10.68,
     rating: 4.42,
@@ -382,7 +399,8 @@ let products = [{
   {
     id: 20,
     title: "Freckle Treatment Cream- 15gm",
-    description: "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
+    description:
+      "Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
     price: 70,
     discountPercentage: 16.99,
     rating: 4.06,
@@ -435,7 +453,8 @@ let products = [{
   {
     id: 23,
     title: "Orange Essence Food Flavou",
-    description: "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
+    description:
+      "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
     price: 14,
     discountPercentage: 8.04,
     rating: 4.85,
@@ -454,7 +473,8 @@ let products = [{
   {
     id: 24,
     title: "cereals muesli fruit nuts",
-    description: "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+    description:
+      "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
     price: 46,
     discountPercentage: 16.8,
     rating: 4.94,
@@ -492,7 +512,8 @@ let products = [{
   {
     id: 26,
     title: "Plant Hanger For Home",
-    description: "Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
+    description:
+      "Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
     price: 41,
     discountPercentage: 17.86,
     rating: 4.08,
@@ -512,7 +533,8 @@ let products = [{
   {
     id: 27,
     title: "Flying Wooden Bird",
-    description: "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
+    description:
+      "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
     price: 51,
     discountPercentage: 15.58,
     rating: 4.41,
@@ -531,7 +553,8 @@ let products = [{
   {
     id: 28,
     title: "3D Embellishment Art Lamp",
-    description: "3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
+    description:
+      "3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
     price: 20,
     discountPercentage: 16.49,
     rating: 4.82,
@@ -550,7 +573,8 @@ let products = [{
   {
     id: 29,
     title: "Handcraft Chinese style",
-    description: "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
+    description:
+      "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
     price: 60,
     discountPercentage: 15.34,
     rating: 4.44,
@@ -569,7 +593,8 @@ let products = [{
   {
     id: 30,
     title: "Key Holder",
-    description: "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
+    description:
+      "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
     price: 30,
     discountPercentage: 2.92,
     rating: 4.92,
@@ -585,24 +610,36 @@ let products = [{
     ],
   },
 ];
-let newProd = products
+let newProd = products;
 let dataCountLenght = products.length;
 dataCount.append(` (${dataCountLenght})`);
 console.log(products);
 
 let elems = document.querySelector(".append-elements");
 
+let sel = document.getElementById("sel_id");
+  sel.addEventListener('click', () => {
+    products.forEach((item) => {
+      let sorty = products.sort((a, b) => a.price - b.price)
+      console.log(item);
+      generetaProducts(sorty)
+    })
+    // console.log(541);
+  })
+
+
+
 function generetaProducts(products) {
-  elems.innerHTML = ``
+  elems.innerHTML = ``;
   products.forEach((item, index) => {
-    let result = item.price / 100 * item.discountPercentage
-    let around = item.price - result
-    let fixd = around.toFixed(2)
+    let result = (item.price / 100) * item.discountPercentage;
+    let around = item.price - result;
+    let fixd = around.toFixed(2);
     console.log();
     // console.log(result);
-    let des = item.description.substring(0, 35)
+    let des = item.description.substring(0, 35);
     let docelems = document.createElement("div");
-    docelems.classList.add('element-box')
+    docelems.classList.add("element-box");
     docelems.innerHTML = `
     <div class="top-element-box"> 
       <img class="img-overflow" src=${item.thumbnail} />
@@ -627,45 +664,48 @@ function generetaProducts(products) {
 }
 generetaProducts(newProd);
 
-let options = document.querySelector('#sel_id')
-console.log(options);
+let asideProperty = document.querySelector(".property");
 
-let asideProperty = document.querySelector('.property')
-
-let categories = ["smartphones", "laptops", "fragrances", "skincare", "groceries", "home-decoration"]
+let categories = [
+  "smartphones",
+  "laptops",
+  "fragrances",
+  "skincare",
+  "groceries",
+  "home-decoration",
+];
 
 function getCategory() {
   categories.forEach((item) => {
     let categoryFilter = document.createElement("div");
-    categoryFilter.classList.add('mainCategoryDivFlex')
+    categoryFilter.classList.add("mainCategoryDivFlex");
     categoryFilter.innerHTML = `
   <div class = "categoryDivFlex">
     <input type = "checkbox" class = "categoryInput">
     <p class = "categoryText">${item}</p>
-  </div>`
-  asideProperty.append(categoryFilter)
-  })
+  </div>`;
+    asideProperty.append(categoryFilter);
+  });
 }
-getCategory(newProd)
+getCategory(newProd);
 
-let categoryDivFlex = document.querySelectorAll('.categoryDivFlex')
-let categoryInput = document.querySelectorAll('.categoryInput')
-// console.log(categoryInput);
-
-
+let categoryDivFlex = document.querySelectorAll(".categoryDivFlex");
+let categoryInput = document.querySelectorAll(".categoryInput");
 
 for (const elems of categoryDivFlex) {
-  elems.addEventListener("click", (e)=>{
-    let newProduct = products.filter(item=>item.category == e.target.innerHTML)
-    for (const iterator of categoryInput) {
-      if(iterator.checked){
-        generetaProducts(newProduct)
-          console.log(newProduct);
-        }
-      }
-      
-  }
-  );
+  elems.addEventListener("click", (e) => {
+    let newProduct = products.filter(
+      (item) => item.category == e.target.innerHTML
+    );
+    generetaProducts(newProduct);
+    console.log(newProduct);
+    // for (const iterator of categoryInput) {
+    //   if(iterator.checked){
+    //   }
+    // }
+  });
 }
+
+
 
 

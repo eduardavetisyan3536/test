@@ -125,7 +125,6 @@ aside {
 
 main {
   width: 73%;
-  background-color: rgb(255, 116, 73);
   height: 400px;
 }
 
@@ -300,7 +299,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   gap: 10px;
   justify-content: space-evenly;
   padding: 10px;
-  background-color: red;
 }
 .categoryDivFlex{
   padding: 0 20px;
