@@ -585,14 +585,15 @@ let products = [{
     ],
   },
 ];
-
+let newProd = products
 let dataCountLenght = products.length;
 dataCount.append(` (${dataCountLenght})`);
 console.log(products);
 
 let elems = document.querySelector(".append-elements");
 
-function generetaProducts() {
+function generetaProducts(products) {
+  elems.innerHTML = ``
   products.forEach((item, index) => {
     let result = item.price / 100 * item.discountPercentage
     let around = item.price - result
@@ -624,7 +625,47 @@ function generetaProducts() {
     elems.append(docelems);
   });
 }
-generetaProducts();
+generetaProducts(newProd);
 
 let options = document.querySelector('#sel_id')
 console.log(options);
+
+let asideProperty = document.querySelector('.property')
+
+let categories = ["smartphones", "laptops", "fragrances", "skincare", "groceries", "home-decoration"]
+
+function getCategory() {
+  categories.forEach((item) => {
+    let categoryFilter = document.createElement("div");
+    categoryFilter.classList.add('mainCategoryDivFlex')
+    categoryFilter.innerHTML = `
+  <div class = "categoryDivFlex">
+    <input type = "checkbox" class = "categoryInput">
+    <p class = "categoryText">${item}</p>
+  </div>`
+  asideProperty.append(categoryFilter)
+  })
+}
+getCategory(newProd)
+
+let categoryDivFlex = document.querySelectorAll('.categoryDivFlex')
+let categoryInput = document.querySelectorAll('.categoryInput')
+// console.log(categoryInput);
+
+
+
+for (const elems of categoryDivFlex) {
+  elems.addEventListener("click", (e)=>{
+    let newProduct = products.filter(item=>item.category == e.target.innerHTML)
+    for (const iterator of categoryInput) {
+      if(iterator.checked){
+        generetaProducts(newProduct)
+          console.log(newProduct);
+        }
+      }
+      
+  }
+  );
+}
+
+
