@@ -619,17 +619,26 @@ let elems = document.querySelector(".append-elements");
 
 let sel = document.getElementById("sel_id");
 
-
 function sortFilter (products) {
-
-  sel.addEventListener('click', () => {
-    products.forEach((item) => {
+  sel.addEventListener('click', (e) => {
+    if(e.target.value === 'По рейтингу'){
+      let sorty = products.sort((a, b) => b.rating - a.rating)
+      generetaProducts(sorty)
+    } 
+    if(e.target.value === 'Самые дорогие'){
+      let sorty = products.sort((a, b) => b.price - a.price)
+      generetaProducts(sorty)
+    }
+    if(e.target.value === 'Самые дешевые'){
       let sorty = products.sort((a, b) => a.price - b.price)
       generetaProducts(sorty)
-    })
-    // console.log(541);
+    }
+    if(e.target.value === 'Популярности'){
+      console.log("I'm so tired");
+    }
   })
 }
+let rightFilter = document.querySelector('.right-filter')
 
 
 
@@ -640,7 +649,6 @@ function generetaProducts(products) {
     let around = item.price - result;
     let fixd = around.toFixed(2);
     console.log();
-    // console.log(result);
     let des = item.description.substring(0, 35);
     let docelems = document.createElement("div");
     docelems.classList.add("element-box");
@@ -664,6 +672,7 @@ function generetaProducts(products) {
     </div>
         `;
     elems.append(docelems);
+    sortFilter()
   });
 }
 generetaProducts(newProd);
