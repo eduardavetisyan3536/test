@@ -618,14 +618,18 @@ console.log(products);
 let elems = document.querySelector(".append-elements");
 
 let sel = document.getElementById("sel_id");
+
+
+function sortFilter (products) {
+
   sel.addEventListener('click', () => {
     products.forEach((item) => {
       let sorty = products.sort((a, b) => a.price - b.price)
-      console.log(item);
       generetaProducts(sorty)
     })
     // console.log(541);
   })
+}
 
 
 
@@ -705,7 +709,7 @@ for (const elems of categoryDivFlex) {
     // }
   });
 }
+let newFilter = document.querySelector('.filter')
+newFilter.addEventListener('click', () => {
 
-
-
-
+})
